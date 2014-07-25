@@ -1,0 +1,121 @@
+.container-milestones {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    width: 100%;
+}
+.container-milestones h1 {
+    color: #000000;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.list_carousel {
+    height: auto;
+    width: 100%;
+}
+.list_carousel ul {
+    display: block;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.list_carousel li {
+    display: block;
+    float: left;
+    height: 400px;
+    margin: 20px;
+    padding: 0;
+    width: 200px;
+}
+.list_carousel li h5 {
+    color: #000000;
+    margin-bottom: 3px;
+}
+p.milestones-date {
+    color: #A1A1A1;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.list_carousel.responsive {
+    margin-left: 0;
+    width: auto;
+}
+#milestones-navigation {
+    height: 70px;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 160px;
+}
+.prev {
+    background: url("../images/left.png") no-repeat scroll 26px 24px #FFFFFF;
+    border-radius: 50px 50px 50px 50px;
+    float: left;
+    height: 30px;
+    padding: 20px;
+    width: 30px;
+}
+.prev:hover {
+    background: url("../images/left_hover.png") no-repeat scroll 26px 24px #E3007B;
+}
+.next {
+    background: url("../images/right.png") no-repeat scroll 28px 24px #FFFFFF;
+    border-radius: 50px 50px 50px 50px;
+    float: left;
+    height: 30px;
+    margin-left: 20px;
+    padding: 20px;
+    width: 30px;
+}
+.next:hover {
+    background: url("../images/right_hover.png") no-repeat scroll 28px 24px #E3007B;
+}
+.milestones:hover .mask {
+    opacity: 1;
+}
+.milestones {
+    float: left;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+.milestones-intro {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    height: 170px;
+    padding: 20px;
+}
+.milestones_page {
+    background-color: #FFFFFF;
+    width: 800px;
+}
+.milestones_content {
+    padding: 40px;
+    width: auto;
+}
+.milestones-details {
+    height: auto;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.milestone-item {
+    text-align: center;
+}
+.milestone-item > h2 {
+    color: #FFFFFF !important;
+    font-family: "Open_Sans_B";
+    font-size: 72px;
+    font-weight: normal;
+    line-height: 78px;
+    text-align: center;
+}
+.milestone-item > h4 {
+    border-top: 1px solid #363942;
+    color: #FFFFFF !important;
+    font-family: "Open_Sans_R";
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 38px;
+    text-align: center;
+}

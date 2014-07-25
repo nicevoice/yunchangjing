@@ -1,0 +1,44 @@
+.row {
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 02.6315798% 0 02.6315798%;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;	
+	}
+
+/* target / context  */
+
+/*	.threecol {
+		width: 30.701554%;
+	} */
+
+	.threecol {
+		/* width: 30.877193%; */
+		width: 19.5%; /* 223 / 1140px --- 44px margin cols */
+		padding:0;
+	}
+	
+		.workcol { /* specifically no margin work elements */
+			width: 25%;
+		}	
+		
+		
+	.fourcol {
+		padding: 0;
+		width: 30.877193% /* 352px / 1140px; */
+	}
+	
+	.sixcol {
+		width: 50%;
+	}
+	
+	.sevencol {
+		width: 56.4%; /* 644px / 1140px; */
+	}
+	
+	.eightcol {
+		width: 65.350877%;  /* 745 / 1140px; */
+	}
+	

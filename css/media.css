@@ -1,0 +1,719 @@
+@media handheld, only screen and (max-width: 875px) {
+
+	section.work .workcol {
+		width: 33.3%;
+	}
+
+
+	/* --- this is the CSS for PAGE:ABOUT ----- */
+
+	.about-content .about-circle {
+		position: relative;
+		width: 220px;
+		height: 220px;
+		margin: 0 auto;
+		overflow: hidden;
+		border-radius: 50%;
+	}
+				
+			
+	.about-content .about-circle a {
+		z-index: 400;
+		position: absolute;
+		display: block;
+		border: 10px solid #fff;
+		border-radius: 50%;
+		width: 200px;
+		height: 200px;
+	}
+
+		.about-content .about-circle a:hover span {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: -102px;
+				margin-top: -102px;
+				background: #fff;	
+				border-radius: 50%;
+				width: 202px;
+				height: 202px;											
+			}
+
+
+				.about-content .about-circle h3 {
+					z-index: 500;
+					border-radius: 50%;
+					position: absolute;
+					text-align: center;
+					line-height: 150px;
+					width: 200px;
+					height: 200px;
+					color: #000;		
+					font-weight: 100 !important;
+					font-size: 2em;
+					text-transform: uppercase;
+					-webkit-transition: all 0.3s ease-in-out;
+					-moz-transition: all 0.3s ease-in-out;
+					-ms-transition: all 0.3s ease-in-out;
+					-o-transition: all 0.3s ease-in-out;
+					transition: all 0.3s ease-in-out;
+					-webkit-transition-delay: 0.3s;
+					-moz-transition-delay: 0.3s;
+					-o-transition-delay: 0.3s;
+					-ms-transition-delay: 0.3s;						
+		
+				}
+					.about-content .about-circle h4 {
+						z-index: 500;
+						border-radius: 50%;
+						position: absolute;
+						top: 130px;
+						text-align: center;
+						line-height: 200px;
+						width: 200px;
+						height: 200px;
+						color: #000;		
+						font-weight: 100 !important;
+						font-size: 2em;
+						text-transform: uppercase;
+						-webkit-transition: all 0.3s ease-in-out;
+						-moz-transition: all 0.3s ease-in-out;
+						-ms-transition: all 0.3s ease-in-out;
+						-o-transition: all 0.3s ease-in-out;
+						transition: all 0.3s ease-in-out;
+						-webkit-transition-delay: 0.5s;
+						-moz-transition-delay: 0.5s;
+						-o-transition-delay: 0.5s;
+						-ms-transition-delay: 0.5s;	
+				}
+				
+				/* ---- /END ---- */
+				
+				
+				
+				
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -- // Mobile styles Ipad only // -- */
+@media handheld, only screen and (max-width: 767px) {
+
+	section.work .workcol {
+		width: 33.3%;
+	}
+	
+	
+	/* Font size for Navigation */
+	nav ul li a {
+		font-size: 1.225em;
+	}
+	
+	/* -- CONTACT ME ------------------ */
+	section.contact .fourcol {
+		float: none;
+		width: 100%;
+		padding: 0 0 30px 0;
+		border-bottom: 1px dotted #ab156c;
+	}
+		section.contact .fourcol:last-of-type {
+			border-bottom: none;
+		}
+	
+	section.contact .fourcol i.icon {
+		display: none;
+	}
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -- // Mobile styles Ipad only // -- */
+@media handheld, only screen and (max-width: 695px) {
+
+
+
+
+		/* -- ABOUT CIRCLES   ------- */
+		
+			.about-content .about-circle {
+				background: #fff;
+				position: relative;
+				width: 150px;
+				height: 150px;
+				margin: 50px auto 0;
+				overflow: hidden;
+				border-radius: 50%;
+				border: none;
+			}
+
+				.about-content .about-circle a {
+					z-index: 400;
+					position: absolute;
+					display: block;
+					border: none;
+					border-radius: 50%;
+					width: 150px;
+					height: 150px;
+				}
+			
+					.about-content .about-circle:first-type-of {
+						margin: 0 auto;
+					}
+				
+					
+				.about-content .about-circle h3 {
+					display: none;
+				}
+					.about-content .about-circle h4 {
+						opacity: 1;
+						z-index: 500;
+						border-radius: 50%;
+						position: absolute;
+						top: -135px;
+						text-align: center;
+						line-height: 200px;
+						width: 150px;
+						height: 150px;
+						color: #36a0b0;
+						font-size: 5.125em;
+						font-weight: 100 !important;
+				}
+				
+				.about-content .about-circle a {
+					z-index: 400;
+					position: absolute;
+					display: block;
+					border-radius: 50%;
+					width: 100px;
+					height: 100px;
+				}
+			
+				/* .about-content .about-circle a:hover {
+					-moz-animation: spin .5s infinite linear;
+	    			-webkit-animation: spin .5s infinite linear;
+	    			animation: spin .5s infinite linear;				
+				} */
+				
+				.about-content .about-circle span {
+					display: none;				
+				}
+
+
+}
+
+
+
+
+
+
+/* -- // Mobile styles Ipad only // -- */
+@media handheld, only screen and (max-width: 625px) {
+
+	section.work .workcol {
+		width: 50% !important;
+	}
+	
+	.about-content {
+		width: 100% !important;
+	}
+	
+	
+	/* Font size for Navigation */
+	nav ul li a {
+		font-size: 1.125em;
+	}
+
+		/* -- ABOUT CIRCLES   ------- */
+		
+			.about-content .about-circle {
+				background: #fff;
+				position: relative;
+				width: 150px;
+				height: 150px;
+				margin: 50px auto 0;
+				overflow: hidden;
+				border-radius: 50%;
+				border: none;
+			}
+
+				.about-content .about-circle a {
+					z-index: 400;
+					position: absolute;
+					display: block;
+					border: none;
+					border-radius: 50%;
+					width: 150px;
+					height: 150px;
+				}
+			
+					.about-content .about-circle:first-type-of {
+						margin: 0 auto;
+					}
+				
+					
+				.about-content .about-circle h3 {
+					display: none;
+				}
+					.about-content .about-circle h4 {
+						opacity: 1;
+						z-index: 500;
+						border-radius: 50%;
+						position: absolute;
+						top: -135px;
+						text-align: center;
+						line-height: 200px;
+						width: 150px;
+						height: 150px;
+						color: #36a0b0;
+						font-size: 5.125em;
+						font-weight: 100 !important;
+				}
+				
+				.about-content .about-circle a {
+					z-index: 400;
+					position: absolute;
+					display: block;
+					border-radius: 50%;
+					width: 100px;
+					height: 100px;
+				}
+			
+				/* .about-content .about-circle a:hover {
+					-moz-animation: spin .5s infinite linear;
+	    			-webkit-animation: spin .5s infinite linear;
+	    			animation: spin .5s infinite linear;				
+				} */
+				
+				.about-content .about-circle span {
+					display: none;				
+				}
+}
+
+
+
+
+
+
+
+
+
+
+/* -- // Mobile styles Ipad only // -- */
+@media handheld, only screen and (max-width: 450px) {
+	
+	section.work .workcol {
+		width: 100% !important;
+	}
+	nav ul li a {
+		font-size: 1em;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media handheld, only screen and (max-width: 350px) {
+
+	a.mini-logo {
+		display: block;
+		float: left;
+		width: 50px;
+		height: 36px;
+		background: url(../img/mini-logo-mobile.png) no-repeat;
+		text-indent: -99999px;
+		text-align: left;
+		padding: 0;
+		margin: 12px 0 0 0;
+	}
+	
+	
+		nav ul li a {
+			font-size: 1em;
+			padding: 17px 13% 18px 13%;
+			
+		}
+
+
+
+				
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -- // Mobile styles Iphone only // -- */
+@media handheld, only screen and (max-width: 320px) {
+
+section .row {
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 90%;
+}
+
+
+
+a.more-button {
+	margin-bottom: 0;
+	display: none;
+}
+
+	.title-wrap {
+		display: none;
+	}
+	
+	.body-wrap {
+		width 100%;
+	}
+
+	a.mini-logo {
+		display: block;
+		float: left;
+		width: 50px;
+		height: 36px;
+		background: url(../img/mini-logo-mobile.png) no-repeat;
+		text-indent: -99999px;
+		text-align: left;
+		padding: 0;
+		margin: 12px 0 0 0;
+	}
+	
+
+	/* -- Global H1 -------------------- */
+	h1 {
+		font-size: 1.875em;
+		text-align: left;
+		font-weight: 100;
+		line-height: 32px;
+		text-transform: none;
+	}
+	
+	/* --All Navigation --------------- */
+	
+	nav {
+		position: fixed !important;
+		top: 0;
+		right: 0;
+		margin: 0;
+		padding: 0;
+	}
+	
+
+
+		nav ul li a {
+			font-size: 0.975em;
+			padding: 17px 12px 18px 12px;
+		}
+			nav ul li a:hover {
+				background: none;
+				color: #000;
+			}
+
+	/*-- SECTION.WORK ---------------- */	
+
+		section.work {
+			padding: 20px 0 80px 0;
+			margin: 0 10px 0 10px;
+		}	
+		
+				
+		section.work h1#work {
+			padding: 80px 0 30px 0;
+			margin: 0 10px 0 10px;
+		}	
+	
+	
+	/*--SECTION.ABOUT----------------- */	
+		section.about {
+			padding: 55px 0 80px 0;
+		}
+			section.about h1 {
+				padding-bottom: 0;			
+			}
+		
+	section.about h1#about {
+		padding: 0;
+		text-align: left;
+	}
+	
+
+			section.about h2 {
+				display: block;
+				font-size: 2em;
+				margin: 0 0 20px 0 !important;
+				padding: 0;
+			}		
+				
+	
+	
+	
+
+
+
+
+
+			.about-content .about-circle {
+				background: #fff;
+				position: relative;
+				width: 100px;
+				height: 100px;
+				margin: 50px auto 0;
+				overflow: hidden;
+				border-radius: 50%;
+				border: none;
+			}
+
+				.about-content .about-circle a {
+					z-index: 400;
+					position: absolute;
+					display: block;
+					border: none;
+					border-radius: 50%;
+					width: 100px;
+					height: 100px;
+				}
+			
+					.about-content .about-circle:first-type-of {
+						margin: 0 auto;
+					}
+				
+					
+				.about-content .about-circle h3 {
+					display: none;
+				}
+					.about-content .about-circle h4 {
+						opacity: 1;
+						z-index: 500;
+						border-radius: 50%;
+						position: absolute;
+						top: -120px;
+						text-align: center;
+						line-height: 200px;
+						width: 100px;
+						height: 100px;
+						color: #36a0b0;
+						font-size: 3.125em;
+						font-weight: 100 !important;
+				}
+				
+				.about-content .about-circle a {
+					z-index: 400;
+					position: absolute;
+					display: block;
+					border-radius: 50%;
+					width: 100px;
+					height: 100px;
+				}
+			
+				/* .about-content .about-circle a:hover {
+					-moz-animation: spin .5s infinite linear;
+	    			-webkit-animation: spin .5s infinite linear;
+	    			animation: spin .5s infinite linear;				
+				} */
+				
+				.about-content .about-circle span {
+					display: none;				
+				}
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+		.about-content.threecol {
+			width: 100%;
+		} 
+		
+		.about-content.threecol ul {
+			margin: 0;
+		}
+		
+	/*-- SECTION.CONTACT ----------------- */	
+	
+	section.contact {
+		padding: 20px 0 80px 0;
+	}	
+
+	section.contact h1#contact {
+		padding: 80px 0 30px 0;
+	}
+	
+	section.contact .fourcol {
+		float: none;
+		width: 100%;
+	}
+	
+
+
+
+	/*-- WORK -- PROJECT VIEW  ----------------- */	
+
+	ul.project-info {
+		position: relative;
+		bottom: 0;
+		right: 12px;
+		width: 100%;
+		padding: 0;
+		margin: 0 auto;
+		text-align: center;	
+	}
+	
+	ul.project-info li {
+		float: none;
+		width: 100%;
+		border: 0;
+	}
+		ul.project-info.dark li {
+			color: #444;
+			border-left: 0px solid #444;
+		}
+		
+		ul.project-info li:first-child {
+			display: none;	
+		}
+
+
+	/*--- CIRCLE NAV --- */
+	.circle-buttons {
+		display: none;
+	}
+
+
+	/*---  PROJECT INFO ------- */
+	ul.project-info {
+		position: relative;
+		top: 200px;
+	}
+
+
+	/* -- INTRO IMAGE -------------------  */
+
+	.project-img-wrap {
+		display: table;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		overflow: hidden;
+		text-align: center;
+		-webkit-box-sizing: border-box; 
+		-moz-box-sizing: border-box;    	
+		box-sizing: border-box;  
+	
+	}
+	
+	.project-img-wrap div {
+		display: table-cell;
+	 	vertical-align: middle;
+	}
+	.project-img-wrap img {
+		width: 26%;
+		max-width: 265px !important;
+		min-width: 265px !important;
+	}
+		.project-img-wrap.intro {
+			margin-top:  -50%;
+		}
+
+	
+	/* -- FOOTER ------------------------ */			
+		.theform.eightcol {
+			width: 90%;
+		}
+
+		footer p.fourcol {
+			width: 90%;
+		}
+}
+
+
+
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (max-width : 320px) {
+	.title-wrap {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+	.gradient-wrap {
+		position: relative;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

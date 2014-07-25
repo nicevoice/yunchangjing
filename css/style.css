@@ -1,0 +1,952 @@
+
+/*---------------------------------------------------------------------------------------
+
+Note if your looking at my code:
+Going to rebuild this doing it the right way, mobile first! This just so happens
+to be my first "responsive" website and i can see flaws in it already.
+
+////CONTENTS /////
+
+01. GENERAL
+02. BUTTONS 
+03. TITLE SIZES 
+04. TITLE SCREEN (first screen with logo)
+05. NAVIGATION 
+06. PAGE: WORK
+07. PAGE: ABOUT
+08. PAGE: CONTACT
+09. FOOTER 
+
+ ------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------
+	GENERAL
+------------------------------------------------------------------------------------------------------------------------------ */
+
+
+html,body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', 'Gill Sans', Helvetica, sans-serif;
+	font-size: 100%;
+	font-weight: 100;
+	background: #000;
+}
+
+
+.body-wrap {
+	position: relative;
+	z-index: 8000;
+	background: #fff;
+	overflow: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+	
+	#page-wrap {
+		display: block;
+		height: 100%;
+	}
+		#inner-wrap {
+			height: 100%;
+			display: block;
+		}
+
+a {
+	color: #444;
+	outline: none;
+	border: 0;
+}
+
+img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------
+	MORE BUTTON FOR ALL PAGES
+------------------------------------------------------------------------------------------------------------------------------ */
+
+
+
+/*-- more-button -- */
+
+ a.more-button {
+ 	position: relative;
+ 	left: 50%;
+ 	margin: 50px 0 50px -50px;
+	width: 50px;
+	height: 50px;
+	border: 5px solid #000;	
+	display: block;
+	text-align: center;
+	color: #fff;
+	font-weight:  600;
+	text-decoration: none;
+	padding: 10px;
+	text-indent: -99999px;
+	-webkit-transform: rotate(45deg); 
+	-moz-transform: rotate(45deg); 
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg); 
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+	/* -- positioning for HOME page arrow - */
+	a.more-button.home {
+		position: absolute;
+		left: 50%;
+		top: 65%; 
+		margin-left: -50px;
+		border: 5px solid #3e3e3e;
+	}
+		a.more-button.home span {
+			border: 5px solid #3e3e3e;
+			border-top: 5px solid transparent; 
+ 			border-left: 5px solid transparent;	
+	
+		}
+	/* -- //END */
+	
+
+
+
+
+
+
+
+
+
+
+	/* -- positioning for ABOUT page arrow - */
+	a.more-button.about {
+		position: relative;
+		left: 50%;
+		margin-left: -50px;
+		border: 5px solid #fff;
+	}
+		a.more-button.about span {
+			border: 5px solid #fff;
+			border-top: 5px solid transparent; 
+ 			border-left: 5px solid transparent;	
+	
+		}
+	/* -- //END */
+	
+
+
+
+
+
+ 	a.more-button span {
+ 		position: absolute;
+ 		display: block;	
+ 		width: 30px;
+ 		height: 30px;
+ 		border: 5px solid #000;
+ 		border-top: 5px solid transparent; 
+ 		border-left: 5px solid transparent;		
+	}
+	
+		a.more-button:hover {
+			border: 5px solid transparent;
+			background: #36a1b1;
+	
+		}
+	
+			 a.more-button:hover span {
+				border: 5px solid #fff;
+			 	border-top: 5px solid transparent; 
+		 		border-left: 5px solid transparent;	
+			}
+	
+	
+		
+		/* ---- MORE BUTTON HOVER FOR //HOME  */
+		a.more-button:hover.home {
+			background: none;
+			border: 5px solid #c5196e;
+			  -moz-box-shadow:    0px 0px 10px 0px #96084e;
+			  -webkit-box-shadow: 0px 0px 10px 0px #96084e;
+			  box-shadow:         0px 0px 10px 0px #96084e;
+	
+		}
+			 a.more-button:hover.home span {
+				border: 5px solid #c5196e;
+			 	border-top: 5px solid transparent; 
+		 		border-left: 5px solid transparent;	
+			}
+		/* ---- //END   */
+
+
+
+
+
+
+		/* ---- MORE BUTTON HOVER FOR //ABOUT  */
+		a.more-button:hover.about {
+			background: none;
+			border: 5px solid #000;
+	
+		}
+			 a.more-button:hover.about span {
+				border: 5px solid #000;
+			 	border-top: 5px solid transparent; 
+		 		border-left: 5px solid transparent;	
+			}
+		/* ---- //END  */
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------
+	TITLE SIZES
+------------------------------------------------------------------------------------------------------------------------------ */
+
+h1 {
+	font-size: 3.125em;
+	font-weight: 100;
+	font-family: 'Open Sans', 'Gill Sans', Helvetica, sans-serif;
+	line-height: 50px;
+	text-align: center;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------
+	TITLE SCREEN
+------------------------------------------------------------------------------------------------------------------------------ */
+
+
+section.title-wrap {
+	z-index: 100;
+	height: 100%;
+	width: 100%;
+	min-width: 100%;
+	min-height: 100%;
+	padding-bottom: 60px;
+	background: url(../img/bg.jpg) 50% 0 repeat fixed;
+}
+	.gradient-wrap {
+		z-index: 100;
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		padding-bottom: 60px;
+		background-position: center center; 
+		background-repeat: no-repeat; 
+		background: url(../img/);
+		/* Safari 4-5, Chrome 1-9 */ /* Can't specify a percentage size? Laaaaaame. */ 
+		background:  -webkit-gradient(radial, center center, 0, center center, 700, from(transparent,), to(#000)); 
+		/* Safari 5.1+, Chrome 10+ */ 
+		background: -webkit-radial-gradient(circle, transparent, #000 ); 
+		/* Firefox 3.6+ */ 
+		background: -moz-radial-gradient(circle, transparent, #000); 
+		/* IE 10 */ 
+		background: radial-gradient(circle, transparent, #000);
+		
+		background: -moz-radial-gradient(circle, transparent, #000); 
+	}
+
+/*-------------------
+	SOCIAL
+-------------------*/
+ul.follow {
+	width: 151px;
+	list-style: none;
+	padding: 50px 0 0 0;
+	margin: 0 auto;
+    overflow: visible;
+
+}
+	ul.follow li {
+		display: block;
+		float: left;
+		color: #a1a1a1;
+		text-shadow: 1px 1px 1px #000;
+	}
+		ul.follow li a {
+			font-family: "Open Sans", 'Gill Sans', Helvetica, Arial, sans-serif;
+			font-size: 14px;
+			margin: 3px 0 0 0;
+			text-decoration: none;
+			color: #333333;
+		    -webkit-transition: color 0.3s ease-in-out;
+		    -moz-transition: color 0.3s ease-in-out;
+		    -o-transition: color 0.3s ease-in-out;
+		   	transition: color 0.3s ease-in-out;			
+		}
+			ul.follow li a:hover {
+				color: #c0c0c0;
+			}
+	
+	ul.follow li:first-child {
+		padding: 0 15px 0 0;
+	}
+
+	ul.follow li:last-child:before {
+  		position: relative;
+    	top: -2px;
+		content: "|";
+		font-size: 13px;
+		font-weight: 100;
+		padding: 0 10px 0 10px;
+		color: #333333;
+	}
+
+
+
+	/* -- logo -- */
+	a.logo {
+		background: url(../img/logo.png) no-repeat;
+		width: 300px;
+		height: 212px;
+		position: absolute;
+		left: 50%;
+		top: 30%; 
+		margin-left: -150px;
+	  	cursor: crosshair;
+	  	text-indent: -99999px;
+	  	z-index: 100;
+	}
+		a.goto {
+			background: url(../img/arrow.png) no-repeat;
+			display:block;
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			left: 50%;
+			top: 70%; 
+			margin-left: -50px;
+		  	z-index: 100;
+		  	font-weight: 100;
+		  	text-decoration: none;
+		  	text-align: center;
+		  	line-height: 50px;
+		  	text-indent: -99999px;
+		  	color: #343434;
+		}
+			a.goto:hover {
+				color: #c0c0c0;
+			}
+		
+		
+		a.goto.about {
+			position: none;
+			margin: 0  auto;
+			padding: 30px 0 30px 0;
+		}
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------
+	NAVIGATION	
+------------------------------------------------------------------------------------------------------------------------------ */
+
+.nav-curve {
+	text-indent: -99999px;
+	z-index: 500;
+	position: relative;
+	width: 100%;
+	height: 60px;
+	margin: -60px 0 0 0;
+	background: transparent url(../img/nav-curve.png) no-repeat;
+	background-size: 100% auto;
+	padding: 0;
+}
+
+			.nav-curve-footer {
+				text-indent: -99999px;
+				z-index: 500;
+				position: relative;
+				width: 100%;
+				height: 60px;
+				margin: -60px 0 0 0;
+				background: transparent url(../img/nav-curve-footer.png) no-repeat;
+				background-size: 100% auto;
+				padding: 0;
+			}
+
+
+
+	a.mini-logo {
+		display: block;
+		float: left;
+		width: 69px;
+		height: 49px;
+		background: url(../img/mini-logo.png) no-repeat;
+		text-indent: -99999px;
+		text-align: left;
+		padding: 0;
+		margin: 12px 0 0 0;
+	}
+		a.mini-logo:hover {
+			opacity: 0.5;
+		}	
+
+	nav {
+		display: block;
+		position: fixed;
+		top: -90px;
+		width: 100%;
+		padding: 0;
+		background: rgba(241,241,241,0.9);
+		z-index: 10000;
+		overflow: auto;
+		transition: all 0.25s ease;
+		-moz-transition: all 0.25s ease;
+		-webkit-transition: all 0.25s ease;		
+	}
+	
+		nav.sticky {
+			position: fixed;
+			top: 0;
+			display: block;		
+		}
+			
+		nav.hidden {
+			display: none;
+		}
+
+	nav .row {
+		height: 47px;
+
+	}
+	
+	nav ul {
+		float: right;
+		text-align: left;
+		display: block;
+		overflow: visible;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+		
+		nav ul li {
+			float: left;
+		}
+			nav ul li a {
+				display: block !important;
+				font-family: "Open Sans", 'Gill Sans', Helvetica, Arial, sans-serif;
+				font-weight: 500;
+				font-size: 1.375em;
+				text-decoration: none;
+				padding: 18px 20px 18px 20px;
+				-webkit-transition: all 0.5s ease-in-out;
+				-moz-transition: all 0.5s ease-in-out;
+				-o-transition: all 0.5s ease-in-out;
+				transition: all 0.5s ease-in-out;
+				-moz-box-sizing: border-box; 
+				-webkit-box-sizing: border-box; 
+				box-sizing: border-box;																		
+			}
+			
+
+				nav ul li a:hover {
+					display: block;
+					background: #36a1b1;
+					color: #fff;
+				}
+				nav .active {
+					color: #fff;
+					background: #1d7683;
+				}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------
+	PAGE: WORK
+------------------------------------------------------------------------------------------------------------------------------ */
+
+.body-wrap {
+	width: 100%;
+	height: auto;
+	overflow: visible;
+	padding: 0;
+	margin: 0;
+	background: #fff;
+
+}
+
+	section.work {
+		padding: 0 0 50px 0;
+	}
+	section.work h1 {
+		padding: 140px 0 50px 0;
+		color: #444;
+		margin: 0;
+	}
+	
+
+		section.work a.folio {
+			overflow: hidden;
+			position: relative;
+			display: block;
+			float: left;
+			padding: 0;
+			margin: 0;
+		}
+
+
+			section.work a.folio img {
+				display: block;
+				max-width: 100%;
+			}
+			
+				section.work a.folio span {
+					position: absolute;
+					top: 0;
+					width: 100%;
+					height: 100%;
+				}
+
+				section.work a.folio span ul {
+					list-style: none;
+					position: absolute;
+					bottom: -40px;
+					width: 100%;
+					height: 40px;
+					padding: 0 12% 12% 12%;
+					margin:  0;
+					background: rgba(53,160,170,0.7);
+					-moz-box-sizing: border-box; 
+					-webkit-box-sizing: border-box; 
+					box-sizing: border-box;	
+					-webkit-transition: all 0.2s ease-in-out;
+					-moz-transition: all 0.2s ease-in-out;
+					-ms-transition: all 0.2s ease-in-out;
+					-o-transition: all 0.2s ease-in-out;
+					transition: all 0.2s ease-in-out;	
+				}
+					section.work a.folio span ul li {
+						padding: 0;
+						margin: 0;
+					}
+						section.work a.folio span ul li h3 {
+							font-size: 0.875em;
+							text-transform: uppercase;
+							color: #fff;
+							font-weight: 500;
+							padding: 10px 0 10px 0;
+							margin: 0;
+						}
+					
+					section.work a.folio span .plus {
+						display: block;
+						width: 100px;
+						height: 100px;
+						margin: -100px auto;
+						-webkit-transition: all 0.2s ease-in-out;
+						-moz-transition: all 0.2s ease-in-out;
+						-ms-transition: all 0.2s ease-in-out;
+						-o-transition: all 0.2s ease-in-out;
+						transition: all 0.2s ease-in-out;						
+					}
+						section a.folio span .plus:hover {
+							-webkit-transform: rotate(45deg);
+							transform: rotate(45deg);
+						}
+							
+				
+				section.work a:hover.folio span {
+					position: absolute; 
+					top: 0;
+					background: rgba(0,0,0,0.8);
+					-webkit-transition: all 0.2s ease-in-out;
+					-moz-transition: all 0.2s ease-in-out;
+					-ms-transition: all 0.2s ease-in-out;
+					-o-transition: all 0.2s ease-in-out;
+					transition: all 0.2s ease-in-out;
+				}
+				
+					section.work a:hover.folio span ul {
+						position: absolute;
+						bottom: 0;
+					}
+					
+					section.work a:hover.folio span .plus {
+						margin-top: 50px;
+					}	
+				
+					
+
+/*------------------------------------------------------------------------------------------------------------------------------
+	PAGE: ABOUT
+------------------------------------------------------------------------------------------------------------------------------ */
+
+	section.about {
+		padding: 100px 0 50px 0;
+		background: #00aeef url(../img/bg_about.jpg) repeat;
+		width: 100%;
+		-moz-box-sizing: border-box; 
+		-webkit-box-sizing: border-box; 
+		box-sizing: border-box;	
+		/* padding: 80px 02.6315789% 80px 02.6315789%; */
+	}
+		section.about h1 {
+			padding: 0 0 50px 0;
+			color: #fff;
+			text-align: center;
+			z-index: 400;
+		}
+		
+		
+			section.about h2 {
+				color: #fff;
+				text-align: center;
+				padding: 0 0 50px 0;
+				z-index: 400;
+				font-weight: 100;
+				display: none;
+			}		
+		
+		
+			.about-content {
+				float: left;
+				margin-right: 03.5087719%;
+			}
+			
+			.about-content p {
+			
+				color: #fff;
+			}
+			
+			.about-content:nth-child(3n+1) {
+					margin-right: 0;
+				}
+			
+		
+			.about-content .about-circle {
+				position: relative;
+				width: 270px;
+				height: 270px;
+				margin: 0 auto 30px;
+				overflow: hidden;
+				border-radius: 50%;
+			}
+				.about-content .about-circle h3 {
+					z-index: 500;
+					border-radius: 50%;
+					position: absolute;
+					text-align: center;
+					line-height: 200px;
+					width: 250px;
+					height: 250px;
+					color: #000;		
+					font-weight: 100 !important;
+					font-size: 2em;
+					text-transform: uppercase;
+					-webkit-transition: all 0.3s ease-in-out;
+					-moz-transition: all 0.3s ease-in-out;
+					-ms-transition: all 0.3s ease-in-out;
+					-o-transition: all 0.3s ease-in-out;
+					transition: all 0.3s ease-in-out;						
+		
+				}
+					.about-content .about-circle h4 {
+						z-index: 500;
+						border-radius: 50%;
+						position: absolute;
+						top: 25px;
+						text-align: center;
+						line-height: 200px;
+						width: 250px;
+						height: 250px;
+						color: #36a0b0;
+						font-size: 7em;
+						opacity: 0;		
+						font-weight: 100 !important;
+						text-transform: uppercase;
+						-webkit-transition: all 0.3s ease-in-out;
+						-moz-transition: all 0.3s ease-in-out;
+						-ms-transition: all 0.3s ease-in-out;
+						-o-transition: all 0.3s ease-in-out;
+						transition: all 0.3s ease-in-out;
+				}
+				
+				.about-content .about-circle a {
+					z-index: 400;
+					position: absolute;
+					display: block;
+					border: 10px solid #fff;
+					border-radius: 50%;
+					width: 250px;
+					height: 250px;
+				}
+			
+				/* .about-content .about-circle a:hover {
+					-moz-animation: spin .5s infinite linear;
+	    			-webkit-animation: spin .5s infinite linear;
+	    			animation: spin .5s infinite linear;				
+				} */
+				
+				.about-content .about-circle span {
+					display: block;			
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					margin-left: 0;
+					margin-top: 0;
+					background: #fff;
+					color: #fff;	
+					border-radius: 50%;
+					width: 0px;
+					height: 0px;
+					-webkit-transition: all 0.2s ease-in-out;
+					-moz-transition: all 0.2s ease-in-out;
+					-ms-transition: all 0.2s ease-in-out;
+					-o-transition: all 0.2s ease-in-out;
+					transition: all 0.2s ease-in-out;					
+				}
+	
+					.about-content .about-circle a:hover span {
+						position: absolute;
+						left: 50%;
+						top: 50%;
+						margin-left: -126px;
+						margin-top: -126px;
+						background: #fff;	
+						border-radius: 50%;
+						width: 251px;
+						height: 251px;											
+					}
+						.about-content .about-circle a:hover h3 {
+							margin-top: 0;
+							opacity: 0;
+						}
+						.about-content .about-circle a:hover h4 {
+							margin-top: 0;
+							opacity: 1;		
+										
+						}
+	
+	
+			
+			
+			
+				/* animation key frames */
+				@-moz-keyframes spin {
+				
+					0% {
+						-moz-transform: rotate(0deg);
+					}
+					100% {
+						-moz-transform: rotate(360deg);
+					}
+				
+				}
+				@-webkit-keyframes spin {
+				
+					0% {
+						-webkit-transform: rotate(0deg);
+					}
+					100% {
+						-webkit-transform: rotate(360deg);
+					}
+				
+				}
+								
+			
+			.about-content ul {
+				display: block;
+				list-style: none;
+				color: #fff;
+				padding: 0;
+				margin: 0;
+			}	
+				.about-content li {
+					padding: 10px 01.754386% 10px;
+					margin: 0;
+					text-align: center;
+					border-bottom: 1px solid #fff;
+				}
+					.about-content li:last-child {
+						border: none;
+					}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------
+	PAGE: BLOG
+------------------------------------------------------------------------------------------------------------------------------ */
+	
+	section.blog {
+		height: 400px;
+	}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------
+	PAGE: CONTACT
+------------------------------------------------------------------------------------------------------------------------------ */
+section.contact {
+	padding: 0 0 150px 0;
+	background: url(../img/bg_contact.gif) repeat;
+	width: 100%;
+	clear: both;
+}
+	section.contact h1 {
+		padding: 140px 0 80px 0;
+		color: #fff;
+		margin: 0;
+	}
+
+section.contact .fourcol {
+	float: left;
+	margin-right: 03.5087719%;
+	color: #ffaddc;
+	text-align: center;
+}
+	section.contact .fourcol p a {
+		text-decoration: none;
+		color: #fff;
+		font-weight: 600;
+	}
+	
+	section.contact .fourcol h3 {
+		font-weight: 100;
+		color: #fff;
+	}
+
+
+
+	section.contact .fourcol:nth-child(3n+1) {
+		margin-right: 0;
+	}
+		
+
+
+section.contact .fourcol i.icon {
+	font-size: 10em;
+
+}	
+
+
+section.contact .fourcol ul {
+	padding: 0;
+	margin: 0;
+}
+
+section.contact .fourcol ul li {
+	list-style: none;
+	padding: 15px 0 15px 0;
+	margin: 0;
+	border-bottom: 1px solid #ab156c;
+	color: #fff;
+}
+
+	section.contact .fourcol ul li i {
+		color: #fff;
+	}
+	section.contact .fourcol ul li a{
+		text-decoration: none;
+		color: #fff;
+	}
+	section.contact .fourcol ul li:last-child {
+		border-bottom: 0;
+	}
+	
+	section.contact .fourcol ul li i {
+		margin: 0 10px 0 0;	
+	}
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------
+	FOOTER	
+------------------------------------------------------------------------------------------------------------------------------ */
+
+
+footer {
+	background: url(../img/bg.jpg) repeat;
+	display: block;
+	width: 100%;
+	padding: 0px 0 20px 0;
+
+}
+	.logo-footer {
+		display: block;
+		text-indent: -99999px;
+		background: url(../img/logo-footer.png) no-repeat;
+		width:103px;
+		height: 73px;
+		margin: 0 auto;
+	}
+	
+		footer p {
+			color: #fff;
+			text-align: center;
+			font-size: 0.875em; 
+			margin: 50px auto;
+			padding: 30px 0 0 0;
+		}
+		
+			footer p span {
+				color: #0776a0;
+			}
+	
+		footer ul.follow {
+			display: block !important;
+		}
+
+
+
+
+
+
+		
+	
